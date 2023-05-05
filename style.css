@@ -1,4 +1,27 @@
 *{
     box-sizing: border-box;
 }
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #ccc;
+}
+
+.nav-bar-header{
+    padding-left: 60px;
+    height: auto;
+    background-color: antiquewhite; 
+    padding-right: 60px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    font-size: 40px;
+    
+}
+.nav-bar-header a{
+    text-decoration: none;
+    margin-left: 5px;
+    margin-right: 5px;
+
+}
 
