@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 </head>
 <body>
-    <nav>
+    <nav class="nav-bar">
         <input type="checkbox" id="check">
         <label for="check" class="checkbtn">
             <i class="fa-solid fa-bars"></i>
@@ -49,10 +49,71 @@
         
     </div>
     <br>
+    <br>
     <div style="text-align: center;">
         <span class="dot" onclick="currentSlide(1)"></span>
         <span class="dot" onclick="currentSlide(2)"></span>
         <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    <br>
+    <div id="products">
+        <h2 class="products-title">Choose Category That You Want to Buy</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-3 product">
+                    <div class="inner-product">
+                        <h2>Free</h2>
+                        <h3>0/Month</h3>
+                        <ul class="product__features">
+                            <li>HD available</li>
+                            <li>Unlimited Movies and TV shows</li>
+                            <li>Watch on your phone & tablet</li>
+                            <li>Download and watch offline</li>
+                            <li>Screens you can watch</li>
+                            <li>First Month Free</li>
+                        </ul>
+                        <div>
+                            <button class="btn btn-primary">Choose Plan</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 product product--featured">
+                    <div class="inner-product recommended_product">
+                        <h2 class="product__badge">Recommended</h2>
+                        <h2>Basic</h2>
+                        <h3>$9.99/month</h3>
+                        <ul class="product__features">
+                            <li>HD available</li>
+                            <li>Unlimited Movies and TV shows</li>
+                            <li>Watch on your phone & tablet</li>
+                            <li>Download and watch offline</li>
+                            <li>Screens you can watch</li>
+                            <li>First Month Free</li>
+                        </ul>
+                        <div>
+                            <button class="btn btn-primary">Choose Plan</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 product">
+                    <div class="inner-product">                    
+                        <h2>Premium</h2>
+                        <h3>$19.99/month</h3>
+                        <ul class="product__features">
+                            <li>HD available</li>
+                            <li>Unlimited Movies and TV shows</li>
+                            <li>Watch on your phone & tablet</li>
+                            <li>Download and watch offline</li>
+                            <li>Screens you can watch</li>
+                            <li>First Month Free</li>
+                        </ul>
+                        <div>
+                            <button class="btn btn-primary">Choose Plan</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     
     <script src="script.js"></script>

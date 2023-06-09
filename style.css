@@ -13,12 +13,13 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
-nav{
+.nav-bar{
     background-color: #111;
     /* height: 80px; */
     width: 100%;
     position: fixed;
     top: 0;
+    z-index: 1;
     
        
 }
@@ -153,6 +154,93 @@ section{
     animation-name: fade;
     animation-duration: 1.5s;
   }
+
+.product{
+    text-align: center;
+    padding: 5px;
+}
+.product__badge{
+    background: #fff;
+    color: #FC997C;
+    padding: 8px;
+    border-radius: 5px;
+}
+.recommended_product{
+    color: #fff;
+    background: #396EB0!important;
+}
+.inner-product{
+    background: #edf5f7;
+    padding: 25px 10px;
+    border-radius: 5px;
+    box-shadow: 0px 7px 29px 0px rgba(100, 100, 111, 0.2);
+    transition: .6s;
+}
+.inner-product:hover{
+    box-shadow: 0px 7px 29px 0px rgba(100, 100, 111, 0.5);
+}
+.product__features{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.product--featured{
+    position: relative;
+    top: -20px;
+}
+.product__features li {
+    margin: 6px 0;
+}
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1000px;
+}
+
+.col-3 {
+    float: left;
+    width: 33.3%;
+}
+.row {
+    margin-top: 40px;
+}
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.products-title{
+    text-align: center;
+    margin-bottom: 40px;
+    color: #3e4555;
+    font-size: 30px;
+}
+.btn {
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    padding: 7px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+    transition-duration: .6s
+}
+.btn-primary {
+    background: #FC997C;
+    color: #fff;
+    border: 2px solid #FC997C;
+}
+.btn-primary:hover {
+    background: #fff;
+    color: #FC997C;
+    border: 2px solid #FC997C;
+}
   
 @keyframes fade {
     from {opacity: .4}
